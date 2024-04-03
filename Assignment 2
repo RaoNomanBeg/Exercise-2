@@ -1,0 +1,9 @@
+def print_sum_of_current_and_previous_numbers():
+    prev_number = 0
+    for current_number in range(10):
+        current_number += 1  # Since range starts from 0
+        current_sum = prev_number + current_number
+        print(f"The sum of {prev_number} and {current_number} is {current_sum}")
+        prev_number = current_number
+
+print_sum_of_current_and_previous_numbers()
